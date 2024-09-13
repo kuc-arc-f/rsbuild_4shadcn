@@ -1,10 +1,12 @@
 
-
+import Head from '../components/Head'
+//
 
 export default function Home() {
   return (
     <>
     <div className="main_body_wrap container mx-auto my-2 px-8 bg-white">
+      <Head />
       {/* navi */}
       {/* items */}
       <h1 className="text-4xl font-bold">Components</h1>
@@ -25,7 +27,23 @@ export default function Home() {
           </a>
         </div>
         <div className="p-2">
+          <a href="/calendar" className="" ><button className="btn-outline-blue">Calendar</button>
+          </a>
+        </div>
+        <div className="p-2">
           <a href="/checkbox"><button className="btn-outline-blue">CheckBox</button>
+          </a>
+        </div>
+        <div className="p-2">
+          <a href="/datepicker"><button className="btn-outline-blue">DatePicker</button>
+          </a>
+        </div>
+        <div className="p-2">
+          <a href="/dialog"><button className="btn-outline-blue">Dialog</button>
+          </a>
+        </div>
+        <div className="p-2">
+          <a href="/form"><button className="btn-outline-blue">Form</button>
           </a>
         </div>
         <div className="p-2">
@@ -38,8 +56,8 @@ export default function Home() {
           </a>
         </div>
         <div className="p-2">
-          <a href="/textarea">
-             <button className="btn-outline-blue">TextArea</button>
+          <a href="/progress">
+             <button className="btn-outline-blue">Progress</button>
           </a>
         </div>
         <div className="p-2">
@@ -53,14 +71,32 @@ export default function Home() {
           </a>
         </div>
         <div className="p-2">
+          <a href="/sheet">
+             <button className="btn-outline-blue">Sheet</button>
+          </a>
+        </div>
+        <div className="p-2">
+          <a href="/switch">
+             <button className="btn-outline-blue">Switch</button>
+          </a>
+        </div>        
+        <div className="p-2">
           <a href="/table">
              <button className="btn-outline-blue">Table</button>
           </a>
         </div>
-
+        <div className="p-2">
+          <a href="/textarea">
+             <button className="btn-outline-blue">TextArea</button>
+          </a>
+        </div>
       </div>
     </div>
     
   </>
   )
 }
+/*
+<h1 className="text-4xl text-gray-700 font-bold my-2"
+>Home!</h1>
+*/
